@@ -1,0 +1,114 @@
+/*columna izq */
+.left-column {
+    flex: 1;
+    margin-top: 0;
+    padding-left: 40px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.left-column h1 {
+    font-size: 90px;
+    margin: 0;
+}
+
+.left-column h2 {
+    font-size: 15px;
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Contenedor de imagen horizontal */
+.left-image-container {
+    position: relative;
+    flex: 1;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.left-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* columna dch*/
+
+/*.right-column {
+    flex: 1;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.right-column img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    border-radius: 40px;
+}*/
+
+.image-home {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+
+/* Efecto capa blanca con hover + texto */
+/* capa blanca semitransparente */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.75);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity .4s;
+}
+
+/* texto dentro del overlay */
+.overlay span {
+    font-size: 32px;
+    color: #000;
+    font-weight: 600;
+}
+
+/* efecto hover para ambas imágenes */
+.left-image-container:hover .overlay,
+.right-column:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+    .wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .right-column img {
+        height: 60vh;
+    }
+
+    .left-image-container {
+        height: 60vh;
+    }
+
+    .image-home {
+        padding-top: 50px;
+    }
+}
