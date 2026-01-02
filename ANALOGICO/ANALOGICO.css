@@ -1,0 +1,250 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Estilo barra de navegación */
+.topnav {
+  display: flex;                /* activa flexbox */
+  justify-content: space-around; /* distribuye los links con espacio igual */
+  align-items: center;          /* centra verticalmente */
+  padding: 10px 20px;
+  gap:100px;
+  background-color: #BFAE9F;
+}
+
+/* Links generales */
+.topnav a {
+  text-decoration: none;
+  color: #f2f2f2;
+  background-color: #000000;
+  padding: 14px 16px;
+  font-size: 17px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+/* Hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Clase activa */
+.active {
+  background-color: #035508;
+  color: white;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+body {
+    font-family: "Ibme plex mono";
+	color:white;
+	background-color: #222;
+	font-size:15px;
+}
+
+h1 {
+	text-color:#00000;
+	font-family: "Ranchers";
+}
+
+h2 {
+	text-color:#00000;
+	font-family: "Ibm plex mono", sans-serif;
+	font-weight:100;
+  	font-style:normal;
+ 	font-variation-settings: "wdth" 100;
+}
+	
+h3 {
+	text-color:#00000;
+	font-size: 20px;
+	font-family: "Ranchers";
+  	font-weight: 400;
+  	font-style: normal;
+}
+
+btn{
+	text-color:#00000;
+	font-size:15px;
+	font-family: "Ibm plex mono", sans-serif;
+	font-weight:400;
+  	font-style:normal;
+ 	font-variation-settings: "wdth" 100;
+}
+
+
+/* Recreación de carretes pero con estilos de caja */
+
+.fila-flex {
+  display: flex;
+  gap: 20px;
+  align-items: stretch; /* ambas columnas misma altura */
+  margin-top: 20px; 
+	}
+	
+.lado-img {
+  width: 15%; /* ajusta a tu gusto */
+}
+
+.lado-carrete {
+  width: 80%;
+}
+.image-izq {
+ padding-left:20px;
+ width: 250px;
+ height: 100%;   /* se estira al alto del carrete */
+ object-fit:contain;
+}
+
+.carrete-h {
+  width: 100%;
+  max-height:350px;
+  padding: 40px 20px;
+  margin:40px;
+  background: #222;
+  position: relative;
+  border-radius: 10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* Agujeros arriba y abajo */
+.carrete-h::before,
+.carrete-h::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: repeating-linear-gradient(
+    to right,
+    transparent 0px,
+    transparent 20px,
+    white 20px,
+    white 40px
+  );
+}
+
+/* superior */
+.carrete-h::before {
+  top: -20px;
+}
+
+/* inferior */
+.carrete-h::after {
+  bottom: -20px;
+}
+/* -------- Galería horizontal sin JS -------- */
+
+.fila-scroll {
+  display: flex;
+  scrollbar-width:thin;
+  scrollbar-color: #888 #222;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+	
+  padding-bottom: 10px;
+	
+}
+.fila-scroll {
+    scrollbar-width: thin;      
+    scrollbar-color: #888 #222; 
+}
+
+.fila-scroll img {
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+  flex-shrink: 0; /* para que no se encojan */
+  scroll-snap-align: center;
+}
+
+/* Contenedor de cada foto */
+.foto-item {
+  position: relative;
+  display: inline-block;
+}
+
+/* El link ocupa toda la imagen */
+.foto-item a {
+  display: block;
+  position: relative;
+}
+
+/* Overlay */
+.overlay-foto {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  color: white;
+  font-size: 22px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  border-radius: 5px;
+}
+
+/* Hover: aparece */
+.foto-item:hover .overlay-foto {
+  opacity: 1;
+}
+
+/* Para que la imagen no salte al hacer hover */
+.foto-item img {
+  display: block;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .fila-flex {
+    flex-direction: column;
+  }
+
+	.lado-img {
+	display:flex;
+	justify-content: center;
+	width:100%;
+	}
+  .lado-carrete {
+    width: 100%;
+  }
+
+  .fila-scroll img {
+    height: 150px;
+  }
+}

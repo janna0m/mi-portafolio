@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+	</style>
+<title>CONTACTO</title>
+	
+	<link type="text/css" rel="stylesheet" href="CONTACTO.css"><!doctype html>
+	
+</head>
+<body>
+<!--Botones-->
+<div class="top-buttons">
+	<a href="../HOME PAGE/HOME PAGE.html" class="btn left-btn buttons">Inicio</a>
+    <a href="../SOBRE MÍ/SOBRE MI.html" class="btn right-btn buttons">Sobre Mí</a>
+</div>
+<div class="card-container" onclick="flipCard(this)">
+  <div class="card">
+    <!-- Frente -->
+    <div class="card-front">
+      <h1 class="brand">JANNA PHOTOS</h1>
+      <p>Fotografía Digital y Analógica</p>
+    </div>
+    
+    <!-- Reverso -->
+    <div class="card-back">
+		<div class="top-right"> 
+		<p class="title">Contacto</p><br>
+        <p class="tel">Telf. +34 654321987</p>
+        <p class="email"><a href="mailto:jannaphotos@gmail.com">jannaphotos@gmail.com</a></p>
+        <p class="instagram"><a href="https://www.instagram.com/janna_photos" target="_blank">@janna_photos</a></p>
+      </div>
+		<div class="bottom-left">
+		<h2>Janna <br>Marañón O.</h2>	
+		</div>
+      
+    </div>
+
+  </div>
+</div>
+	
+<script>
+function flipCard(container) {
+  if (container.classList.contains('flipped')) {
+    container.classList.remove('flipped');
+  } else {
+    container.classList.add('flipped');
+  }
+}
+</script> 
+	
+</body>
+
+
+</html>

@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Botones del header*/
+/* Contenedor de los botones */
+.top-buttons {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.buttons{
+	text-color:#00000;
+	font-size:15px;
+	font-family: "Ibm plex mono", sans-serif;
+	font-weight:400;
+  	font-style:normal;
+ 	font-variation-settings: "wdth" 100;
+/* Estilo base de ambos botones */
+}
+.btn {
+  background-color: #FFFFFF;
+  padding: 14px 20px;
+  text-decoration: none;
+  color:#000000;
+  border-radius:50px;
+  transition: .3s;
+}
+
+/* Hover */
+.btn:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1{
+	text-color:#00000;
+	font-size: 80px;
+	font-family: "Ranchers";
+  	font-weight: 400;
+  	font-style: normal;
+}
+
+h2{
+	text-color:#00000;
+	font-size: 100px;
+	font-family: "ibm plex mono";
+  	font-weight: 400;
+  	font-style: normal;
+}
+
+p {
+	font-family: "Ibm plex mono", sans-serif;
+	font-size:20px;
+	font-weight:300;
+}
+
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1s ease-out forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Contenedor de tarjeta*/
+.card-container {
+  width: 680px;
+  height: 400px;
+  margin: 50px auto;
+  perspective: 1000px; 
+  cursor: pointer;
+ display:flex;
+}
+
+/* Tarjeta */
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+/* Al hacer clic */
+.card-container.flipped .card {
+  transform: rotateY(180deg);
+}
+
+/* Caras */
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  padding: 10px;
+  box-sizing: border-box;
+  
+}
+
+/* Frente de la tarjeta */
+.card-front {
+  background-image:url("../assets/contacto/contacto.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  border: 1px solid #444;
+  flex-direction: column;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* Reverso */
+.card-back {
+  background: #eee;
+  color: black;
+  transform: rotateY(180deg);
+  border: 1px solid #ccc;
+}
+
+.top-right {
+   position: absolute;
+	color:#000000;
+    top: 20px;
+    right: 20px;
+    text-align:right;
+}
+
+
+.bottom-left {
+    position: absolute;
+    top:40px;
+	left: 20px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 15px;
+  color: #000000;
+  margin: 0; 
+}
+
+/* Teléfono */
+.tel {
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
+  margin: 0;
+}
+
+/* Email */
+.email a {
+  color: #000000;
+  font-weight: 300;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* Instagram */
+.instagram a {
+  color: #000000;
+  font-weight: 300;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.email a,
+.instagram a:link,
+.instagram a:visited,
+.instagram a:active {
+  color: #000000;
+  text-decoration: none;
+}
+.email a:hover,
+.instagram a:hover{
+	color:#ffffff;
+	text-decoration:none;
+}
+@media (min-width: 680px) {
+  .card-container {
+    min-width: 680px;
+    /* mantiene proporción si es necesario */
+  }
+}
