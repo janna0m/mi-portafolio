@@ -9,26 +9,29 @@
     </style>
     <title>Inicio</title>
     <link type="text/css" rel="stylesheet" href="./css/main.css" />
-
+    <link type="text/css" rel="stylesheet" href="./css/home.css" />
   </head>
   <body>
     <main>
       <!--Navegación-->
-      <div class="top-buttons">
+      <nav class="top-buttons">
         <a href="./sobre-mi.html" class="btn left-btn"><btn>Sobre mí</btn></a>
         <a href="./contacto.html" class="btn right-btn"><btn>Contacto</btn></a>
-      </div>
+      </nav>
+
       <!--Diseño de columnas-->
       <div class="wrapper">
         <!-- columna izq -->
         <section class="left-column fade-up">
-          <h1>JANNA PHOTOS</h1>
-          <h2>
-            <strong>Fotógrafa dedicada a capturar recuerdos.</strong
-            ><br />Disparo en analógico cuando se trata de espontaneidad y
-            cercanía. En cambio reservo el digital para encargos profesionales
-            que exigen una técnica más controlada.
-          </h2>
+          <div class="main-text">
+            <h1>JANNA PHOTOS</h1>
+            <h2>Fotógrafa dedicada a capturar recuerdos.</h2>
+            <p>
+              Disparo en analógico cuando se trata de espontaneidad y cercanía.
+              En cambio reservo el digital para encargos profesionales que
+              exigen una técnica más controlada.
+            </p>
+          </div>
 
           <!-- Enlace clickable a la subpágina Digital -->
           <a href="./digital/index.html" class="image-link">
@@ -44,11 +47,7 @@
         </section>
 
         <!-- Enlace clickable a la supágina Analógico-->
-        <a
-          href="./analogico/index.html"
-          class="image-link"
-          style="flex: 1"
-        >
+        <a href="./analogico/index.html" class="image-link">
           <div class="right-column fade-up">
             <img src="./assets/home/home_2.JPG" alt="foto vertical" />
 
