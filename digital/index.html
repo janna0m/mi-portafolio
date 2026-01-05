@@ -1,112 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Ranchers&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-    </style>
-    <title>DIGITAL</title>
 
-    <!-- Fuente: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- Load css style -->
-    <link rel="stylesheet" type="text/css" href="../css/digital.css" />
-    <!-- Load javascript -->
-    <script src="../js/navbar.js"></script>
-  </head>
-  <body style="background-color: #000000">
-    <div class="topnav" id="myTopnav">
-      <div>
-        <div class="topnav">
-          <a href="../sobre-mi.html" class="left-link"><btn>Sobre mí</btn></a>
-          <a href="../index.html" class="center-link"><btn>Inicio</btn></a>
-          <a href="../contacto.html" class="right-link"><btn>Contacto</btn></a>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Ranchers&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+  </style>
+  <title>DIGITAL</title>
+
+  <!-- Fuente: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Load css style -->
+  <link type="text/css" rel="stylesheet" href="../css/main.css" />
+  <link type="text/css" rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" type="text/css" href="../css/digital.css" />
+  <!-- Load javascript -->
+  <script src="../js/navbar.js"></script>
+</head>
+
+<body style="background-color: #000000">
+
+  <nav class="topnav" id="myTopnav">
+    <div class="topnav btns">
+      <a href="../sobre-mi.html" class="left-link">
+        <btn>Sobre mí</btn>
+      </a>
+      <a href="../index.html" class="center-link">
+        <btn>Inicio</btn>
+      </a>
+      <a href="../contacto.html" class="right-link">
+        <btn>Contacto</btn>
+      </a>
+    </div>
+    <a href="#" class="icon" onclick="resposiveNav()">
+      <!-- elemento vacío que representa el menú hamburguesa -->
+      <span id="bars" class="fa fa-bars"></span>
+    </a>
+  </nav>
+
+  <div class="container">
+    <!-- Bloque 1 -->
+    <section class="block">
+      <a href="../digital/pandora.html" class="image-link">
+        <div class="image-wrapper">
+          <img src="../assets/digital/pandora/escena_4_zoom.jpg" alt="Pandora" class="hover-img" />
+          <img src="../assets/svg/tarjeta_pandora.svg" alt="Tarjeta SD Pandora" class="main-img" />
         </div>
-        <a href="#" class="icon" onclick="myFunction()">
-          <span class="fa fa-bars"></span
-          ><!-- elemento vacío que representa el menú hamburguesa -->
-        </a>
-      </div>
-    </div>
+      </a>
+    </section>
 
-    <div class="container">
-      <!-- Bloque 1 -->
-      <div class="block">
-        <a href="../digital/pandora.html" class="image-link">
-          <div class="image-wrapper">
-            <img
-              src="../assets/digital/pandora/escena_4_zoom.jpg"
-              alt="Pandora"
-              class="hover-img"
-            />
-            <img
-              src="../assets/svg/tarjeta_pandora.svg"
-              alt="Tarjeta SD Pandora"
-              class="main-img"
-            />
-          </div>
-        </a>
-      </div>
+    <!-- Bloque 2 -->
+    <section class="block">
+      <a href="../digital/polished-outlaw.html" class="image-link">
+        <div class="image-wrapper">
+          <img src="../assets/digital/polished-outlaw/0008.jpg" alt="Polished Outlaw" class="hover-img" />
+          <img src="../assets/svg/tarjeta_polished_outlaw.svg" alt="Tarjeta SD Outlaw" class="main-img" />
+        </div>
+      </a>
+    </section>
 
-      <!-- Bloque 2 -->
-      <div class="block">
-        <a href="../digital/polished-outlaw.html" class="image-link">
-          <div class="image-wrapper">
-            <img
-              src="../assets/digital/polished-outlaw/0008.jpg"
-              alt="Polished Outlaw"
-              class="hover-img"
-            />
-            <img
-              src="../assets/svg/tarjeta_polished_outlaw.svg"
-              alt="Tarjeta SD Outlaw"
-              class="main-img"
-            />
-          </div>
-        </a>
-      </div>
+    <!-- Bloque 3 -->
+    <section class="block">
+      <a href="../digital/la-maleta-roja.html" class="image-link">
+        <div class="image-wrapper">
+          <img src="../assets/digital/la-maleta/00010.jpg" alt="La Maleta Roja" class="hover-img" />
+          <img src="../assets/svg/tarjeta_la_maleta.svg" alt="Tarjeta SD Maleta" class="main-img" />
+        </div>
+      </a>
+    </section>
 
-      <!-- Bloque 3 -->
-      <div class="block">
-        <a href="../digital/la-maleta-roja.html" class="image-link">
-          <div class="image-wrapper">
-            <img
-              src="../assets/digital/la-maleta/00010.jpg"
-              alt="La Maleta Roja"
-              class="hover-img"
-            />
-            <img
-              src="../assets/svg/tarjeta_la_maleta.svg"
-              alt="Tarjeta SD Maleta"
-              class="main-img"
-            />
-          </div>
-        </a>
-      </div>
+    <!-- Bloque 4 -->
+    <section class="block">
+      <a href="../digital/fumando-espero.html" class="image-link">
+        <div class="image-wrapper">
+          <img src="../assets/digital/fumando-espero/00009.jpg" alt="Fumando Espero" class="hover-img" />
+          <img src="../assets/svg/tarjeta_fumando_espero.svg" alt="Tarjeta SD Fumando" class="main-img" />
+        </div>
+      </a>
+    </section>
+  </div>
+</body>
 
-      <!-- Bloque 4 -->
-      <div class="block">
-        <a href="../digital/fumando-espero.html" class="image-link">
-          <div class="image-wrapper">
-            <img
-              src="../assets/digital/fumando-espero/00009.jpg"
-              alt="Fumando Espero"
-              class="hover-img"
-            />
-            <img
-              src="../assets/svg/tarjeta_fumando_espero.svg"
-              alt="Tarjeta SD Fumando"
-              class="main-img"
-            />
-          </div>
-        </a>
-      </div>
-    </div>
-  </body>
 </html>

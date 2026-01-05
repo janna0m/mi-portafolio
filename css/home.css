@@ -101,11 +101,16 @@
   .wrapper {
     flex-direction: column;
     height: auto;
+    padding-bottom: 30px;
   }
 
   .left-column {
     width: 100%;
-    padding-bottom: 30px;
+    padding: 0 30px;
+  }
+
+  .right-column {
+    padding: 30px;
   }
 
   .left-column .main-text {

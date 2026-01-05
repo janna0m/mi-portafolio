@@ -1,5 +1,3 @@
-
-
 /* contendedor de 2 columnas */
 
 .wrapper {
@@ -49,12 +47,13 @@
         height: auto;
     }
 
-    .right-column{
+    .right-column {
         order: 1;
     }
 
-    .left-column{
+    .left-column {
         order: 2;
+        padding: 0;
     }
 
     .right-column img {

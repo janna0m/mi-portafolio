@@ -41,7 +41,6 @@
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  border: 1px solid #444;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -51,23 +50,27 @@
 /* Reverso */
 .card-back {
   background: #eee;
-  color: black;
+  color: #000000;
   transform: rotateY(180deg);
   border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
 }
 
 .top-right {
-  position: absolute;
-  color: #000000;
+  /* position: absolute;
   top: 20px;
-  right: 20px;
+  right: 20px; */
+  color: #000000;
   text-align: right;
 }
 
 .bottom-left {
-  position: absolute;
+  /* position: absolute;
   top: 40px;
-  left: 20px;
+  left: 20px; */
   text-align: left;
   font-size: 1rem;
 }
@@ -113,7 +116,7 @@
 
 .email a:hover,
 .instagram a:hover {
-  color: #ffffff;
+  font-weight: bolder;
   text-decoration: none;
 }
 
@@ -123,8 +126,13 @@
     /* mantiene proporción si es necesario */
   }
 
-  .card {
-    padding: 50px;
+  .wrapper {
+    padding: 20px;
+  }
+
+  .card-back {
+    flex-direction: column;
+    align-items: stretch;
 
   }
 }

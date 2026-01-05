@@ -1,202 +1,172 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Ranchers&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-    </style>
-    <title>ANALÓGICOalógico</title>
-    <link rel="stylesheet" type="text/css" href="../css/analogico.css" />
 
-    <!-- Fuente: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- Load css style -->
-    <link rel="stylesheet" type="text/css" href="../css/digital.css" />
-    <!-- Load javascript -->
-    <script src="../js/navbar.js"></script>
-  </head>
-  <body style="background-color: #bfae9f">
-    <div class="topnav" id="myTopnav">
-      <div>
-        <div class="topnav">
-          <a href="../sobre-mi.html" class="left-link"><btn>Sobre mí</btn></a>
-          <a href="../index.html" class="center-link"><btn>Inicio</btn></a>
-          <a href="../contacto.html" class="right-link"><btn>Contacto</btn></a>
-        </div>
-        <a href="#" class="icon" onclick="myFunction()">
-          <span class="fa fa-bars"></span
-          ><!-- elemento vacío que representa el menú hamburguesa -->
-        </a>
-      </div>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Ranchers&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+  </style>
+  <title>ANALÓGICOalógico</title>
+  <link rel="stylesheet" type="text/css" href="../css/analogico.css" />
+
+  <!-- Fuente: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Load css style -->
+  <link type="text/css" rel="stylesheet" href="../css/main.css" />
+  <link type="text/css" rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" type="text/css" href="../css/digital.css" />
+  <!-- Load javascript -->
+  <script src="../js/navbar.js"></script>
+</head>
+
+<body style="background-color: #bfae9f">
+
+  <nav class="topnav" id="myTopnav">
+    <div class="topnav btns">
+      <a href="../sobre-mi.html" class="left-link">
+        <btn>Sobre mí</btn>
+      </a>
+      <a href="../index.html" class="center-link">
+        <btn>Inicio</btn>
+      </a>
+      <a href="../contacto.html" class="right-link">
+        <btn>Contacto</btn>
+      </a>
     </div>
-    <!-- Fila con imagen izquierda + carrete -->
-    <div class="fila-flex">
-      <!-- Lado izquierda: imagen fija -->
-      <div class="lado-img">
-        <img
-          src="../assets/svg/carrete-eventos.svg"
-          alt="Carrete"
-          class="image-izq"
-        />
-      </div>
+    <a href="#" class="icon" onclick="resposiveNav()">
+      <!-- elemento vacío que representa el menú hamburguesa -->
+      <span id="bars" class="fa fa-bars"></span>
+    </a>
+  </nav>
 
-      <!-- Lado derecha: carrete horizontal con overlays -->
-      <div class="lado-carrete">
-        <div class="carrete-h">
-          <div class="fila-scroll">
-            <!-- FOTO 1 -->
-            <div class="foto-item">
-              <a href="../analogico/sangriada-25-2.html">
-                <img
-                  src="../assets/analogico/sangriada-25-2/00001.JPG"
-                  alt="Foto 1"
-                />
-                <div class="overlay-foto">Ver más</div>
-              </a>
-            </div>
+  <!-- Fila con imagen izquierda + carrete -->
+  <section class="fila-flex">
+    <!-- Lado izquierda: imagen fija -->
+    <div class="lado-img">
+      <img src="../assets/svg/carrete-eventos.svg" alt="Carrete" class="image-izq" />
+    </div>
 
-            <!-- FOTO 2 -->
-            <div class="foto-item">
-              <a href="../analogico/mango-nectar.html">
-                <img
-                  src="../assets/analogico/mango-nectar/00001.JPG"
-                  alt="Foto 2"
-                />
-                <div class="overlay-foto">Ver más</div>
-              </a>
-            </div>
+    <!-- Lado derecha: carrete horizontal con overlays -->
+    <div class="lado-carrete">
+      <div class="carrete-h">
+        <div class="fila-scroll">
+          <!-- FOTO 1 -->
+          <div class="foto-item">
+            <a href="../analogico/sangriada-25-2.html">
+              <img src="../assets/analogico/sangriada-25-2/00001.JPG" alt="Foto 1" />
+              <div class="overlay-foto">Ver más</div>
+            </a>
+          </div>
 
-            <!-- FOTO 3 -->
-            <div class="foto-item">
-              <a href="../analogico/sangriada-25.html">
-                <img
-                  src="../assets/analogico/sangriada-25/00005.JPG"
-                  alt="Foto 3"
-                />
-                <div class="overlay-foto">Ver más</div>
-              </a>
-            </div>
+          <!-- FOTO 2 -->
+          <div class="foto-item">
+            <a href="../analogico/mango-nectar.html">
+              <img src="../assets/analogico/mango-nectar/00001.JPG" alt="Foto 2" />
+              <div class="overlay-foto">Ver más</div>
+            </a>
+          </div>
 
-            <!-- FOTO 4 -->
-            <div class="foto-item">
-              <a href="../analogico/el-gavira.html">
-                <img
-                  src="../assets/analogico/el-gavira/00001.jpeg"
-                  alt="Foto 4"
-                />
-                <div class="overlay-foto">Ver más</div>
-              </a>
-            </div>
+          <!-- FOTO 3 -->
+          <div class="foto-item">
+            <a href="../analogico/sangriada-25.html">
+              <img src="../assets/analogico/sangriada-25/00005.JPG" alt="Foto 3" />
+              <div class="overlay-foto">Ver más</div>
+            </a>
+          </div>
 
-            <!-- FOTO 5 -->
-            <div class="foto-item">
-              <a href="../analogico/archivo-bbaa.html">
-                <img
-                  src="../assets/analogico/archivo-bbaa/00009.jpeg"
-                  alt="Foto 5"
-                />
-                <div class="overlay-foto">Ver más</div>
-              </a>
-            </div>
+          <!-- FOTO 4 -->
+          <div class="foto-item">
+            <a href="../analogico/el-gavira.html">
+              <img src="../assets/analogico/el-gavira/00001.jpeg" alt="Foto 4" />
+              <div class="overlay-foto">Ver más</div>
+            </a>
+          </div>
 
-            <!-- FOTO 6 -->
-            <div class="foto-item">
-              <a href="../analogico/los-justicieros.html">
-                <img
-                  src="../assets/analogico/los-justicieros/00006.jpeg"
-                  alt="Foto 6"
-                />
-                <div class="overlay-foto">Ver más</div>
-              </a>
-            </div>
+          <!-- FOTO 5 -->
+          <div class="foto-item">
+            <a href="../analogico/archivo-bbaa.html">
+              <img src="../assets/analogico/archivo-bbaa/00009.jpeg" alt="Foto 5" />
+              <div class="overlay-foto">Ver más</div>
+            </a>
+          </div>
 
-            <!-- FOTO 7 -->
-            <div class="foto-item">
-              <a href="../analogico/carnaval-toledo.html">
-                <img
-                  src="../assets/analogico/carnaval-toledo/00002.JPG"
-                  alt="Foto 7"
-                />
-                <div class="overlay-foto">Ver más</div>
-              </a>
-            </div>
+          <!-- FOTO 6 -->
+          <div class="foto-item">
+            <a href="../analogico/los-justicieros.html">
+              <img src="../assets/analogico/los-justicieros/00006.jpeg" alt="Foto 6" />
+              <div class="overlay-foto">Ver más</div>
+            </a>
+          </div>
+
+          <!-- FOTO 7 -->
+          <div class="foto-item">
+            <a href="../analogico/carnaval-toledo.html">
+              <img src="../assets/analogico/carnaval-toledo/00002.JPG" alt="Foto 7" />
+              <div class="overlay-foto">Ver más</div>
+            </a>
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- 2 Fila con imagen izquierda + carrete -->
-    <div class="fila-flex">
-      <!-- Lado izquierda: imagen fija -->
-      <div class="lado-img">
-        <img
-          src="../assets/svg/carrete-viajes.svg"
-          alt="Carrete"
-          class="image-izq"
-        />
-      </div>
+  <!-- 2 Fila con imagen izquierda + carrete -->
+  <section class="fila-flex">
+    <!-- Lado izquierda: imagen fija -->
+    <div class="lado-img">
+      <img src="../assets/svg/carrete-viajes.svg" alt="Carrete" class="image-izq" />
+    </div>
 
-      <!-- Lado derecha: carrete horizontal con overlays -->
-      <div class="lado-carrete">
-        <div class="carrete-h">
-          <div class="fila-scroll">
-            <!-- FOTO 1 -->
-            <div class="foto-item">
-              <a href="../analogico/sevilla.html">
-                <img
-                  src="../assets/analogico/sevilla/00001.jpeg"
-                  alt="Foto 1"
-                />
-                <div class="overlay-foto">Ver más</div>
-              </a>
-            </div>
+    <!-- Lado derecha: carrete horizontal con overlays -->
+    <div class="lado-carrete">
+      <div class="carrete-h">
+        <div class="fila-scroll">
+          <!-- FOTO 1 -->
+          <div class="foto-item">
+            <a href="../analogico/sevilla.html">
+              <img src="../assets/analogico/sevilla/00001.jpeg" alt="Foto 1" />
+              <div class="overlay-foto">Ver más</div>
+            </a>
+          </div>
 
-            <!-- FOTO 2 -->
-            <div class="foto-item">
-              <a href="../analogico/oviedo.html">
-                <img src="../assets/analogico/oviedo/00015.jpeg" alt="Foto 2" />
-                <div class="overlay-foto">Ver más</div>
-              </a>
-            </div>
+          <!-- FOTO 2 -->
+          <div class="foto-item">
+            <a href="../analogico/oviedo.html">
+              <img src="../assets/analogico/oviedo/00015.jpeg" alt="Foto 2" />
+              <div class="overlay-foto">Ver más</div>
+            </a>
+          </div>
 
-            <!-- FOTO 3 -->
-            <div class="foto-item">
-              <a href="../analogico/tenerife.html">
-                <img
-                  src="../assets/analogico/tenerife/00001.jpeg"
-                  alt="Foto 3"
-                />
-                <div class="overlay-foto">Ver más</div>
-              </a>
-            </div>
+          <!-- FOTO 3 -->
+          <div class="foto-item">
+            <a href="../analogico/tenerife.html">
+              <img src="../assets/analogico/tenerife/00001.jpeg" alt="Foto 3" />
+              <div class="overlay-foto">Ver más</div>
+            </a>
+          </div>
 
-            <!-- FOTO 4 -->
-            <div class="foto-item">
-              <a href="../analogico/grecia.html">
-                <img src="../assets/analogico/grecia/00001.jpeg" alt="Foto 4" />
-                <div class="overlay-foto">Ver más</div>
-              </a>
-            </div>
+          <!-- FOTO 4 -->
+          <div class="foto-item">
+            <a href="../analogico/grecia.html">
+              <img src="../assets/analogico/grecia/00001.jpeg" alt="Foto 4" />
+              <div class="overlay-foto">Ver más</div>
+            </a>
+          </div>
 
-            <!-- FOTO 5 -->
-            <div class="foto-item">
-              <a href="../analogico/vitoria.html">
-                <img
-                  src="../assets/analogico/vitoria/00002.jpeg"
-                  alt="Foto 5"
-                />
-                <div class="overlay-foto">Ver más</div>
-              </a>
-            </div>
+          <!-- FOTO 5 -->
+          <div class="foto-item">
+            <a href="../analogico/vitoria.html">
+              <img src="../assets/analogico/vitoria/00002.jpeg" alt="Foto 5" />
+              <div class="overlay-foto">Ver más</div>
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </section>
+</body>
+
 </html>
