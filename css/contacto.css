@@ -36,7 +36,7 @@
 
 /* Frente de la tarjeta */
 .card-front {
-  background-image: url("../assets/contacto/contacto.JPG");
+  background-image: url("../assets/contacto/contacto.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -45,6 +45,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.brand {
+  font-size: 80px;
+  margin: 0;
+  text-align: center;
 }
 
 /* Reverso */
@@ -133,6 +139,5 @@
   .card-back {
     flex-direction: column;
     align-items: stretch;
-
   }
 }

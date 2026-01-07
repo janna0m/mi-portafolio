@@ -1,113 +1,154 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>LOS JUSTICIEROS</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<style>
-	@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
-	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-	</style>
+  <head>
+    <meta charset="UTF-8" />
+    <title>LOS JUSTICIEROS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ranchers&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+    </style>
     <title>Bloques + Carrusel</title>
 
     <!-- Bootstrap (como en tu ejemplo) -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link type="text/css" rel="stylesheet" href="../css/foto-detalle.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="../css/foto-detalle.css" />
+    <link type="text/css" rel="stylesheet" href="../css/main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-<div class="top-buttons">
-    <a href="./index.html" class="btn right-btn buttons">Volver</a>
-</div>
+  </head>
+  <body>
+    <div class="top-buttons">
+      <a href="./index.html" class="btn right-btn buttons">Volver</a>
+    </div>
     <div class="contenedor-general">
-        <div class="columna-izq">
+      <div class="columna-izq">
         <div class="bloque-arriba">
-            <h1>CONCIERTO <br>Los Justicieros</h1>
+          <h1>CONCIERTO <br />Los Justicieros</h1>
+        </div>
+        <p>
+          Facultad de Bellas Artes<br />
+          Fecha: Abr. 2025
+        </p>
+      </div>
+
+      <div class="columna-der">
+        <div class="container">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+              <li data-target="#myCarousel" data-slide-to="6"></li>
+              <li data-target="#myCarousel" data-slide-to="7"></li>
+              <li data-target="#myCarousel" data-slide-to="8"></li>
+              <li data-target="#myCarousel" data-slide-to="9"></li>
+              <li data-target="#myCarousel" data-slide-to="10"></li>
+            </ol>
+
+            <!-- Slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img
+                  src="../assets/analogico/los-justicieros/00001.jpeg"
+                  alt="Los Justicieros 01"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="../assets/analogico/los-justicieros/00002.jpeg"
+                  alt="Los Justicieros 02"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="../assets/analogico/los-justicieros/00003.jpeg"
+                  alt="Los Justicieros 03"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="../assets/analogico/los-justicieros/00004.jpeg"
+                  alt="Los Justicieros 04"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="../assets/analogico/los-justicieros/00005.jpeg"
+                  alt="Los Justicieros 05"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="../assets/analogico/los-justicieros/00006.jpeg"
+                  alt="Los Justicieros 06"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="../assets/analogico/los-justicieros/00007.jpeg"
+                  alt="Los Justicieros 07"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="../assets/analogico/los-justicieros/00008.jpeg"
+                  alt="Los Justicieros 08"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="../assets/analogico/los-justicieros/00009.jpeg"
+                  alt="Los Justicieros 09"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="../assets/analogico/los-justicieros/00010.jpeg"
+                  alt="Los Justicieros 10"
+                />
+              </div>
             </div>
-              <p>Facultad de Bellas Artes<br>
-			   Fecha: Abr. 2025</p> 
-            </div>
 
-        <div class="columna-der">
-
-            <div class="container">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-                    <!-- Indicadores -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                        <li data-target="#myCarousel" data-slide-to="3"></li>
-						<li data-target="#myCarousel" data-slide-to="4"></li>
-                        <li data-target="#myCarousel" data-slide-to="5"></li>
-                        <li data-target="#myCarousel" data-slide-to="6"></li>
-                        <li data-target="#myCarousel" data-slide-to="7"></li>
-						<li data-target="#myCarousel" data-slide-to="8"></li>
-                        <li data-target="#myCarousel" data-slide-to="9"></li>
-                        <li data-target="#myCarousel" data-slide-to="10"></li>
-                     
-                    </ol>
-
-                    <!-- Slides -->
-                    <div class="carousel-inner" role="listbox">
-
-                        <div class="item active">
-                            <img src="../assets/analogico/los-justicieros/00001.jpeg" alt="Los Justicieros 01">
-                        </div>
-
-                        <div class="item">
-                            <img src="../assets/analogico/los-justicieros/00002.jpeg" alt="Los Justicieros 02">
-                        </div>
-
-                        <div class="item">
-                            <img src="../assets/analogico/los-justicieros/00003.jpeg" alt="Los Justicieros 03">
-                        </div>
-
-                        <div class="item">
-                            <img src="../assets/analogico/los-justicieros/00004.jpeg" alt="Los Justicieros 04">
-                        </div>
-
-						 <div class="item">
-                            <img src="../assets/analogico/los-justicieros/00005.jpeg" alt="Los Justicieros 05">
-                        </div>
-						 <div class="item">
-                            <img src="../assets/analogico/los-justicieros/00006.jpeg" alt="Los Justicieros 06">
-                        </div>
-						
-						 <div class="item">
-                            <img src="../assets/analogico/los-justicieros/00007.jpeg" alt="Los Justicieros 07">
-                        </div>
-						
-						 <div class="item">
-                            <img src="../assets/analogico/los-justicieros/00008.jpeg" alt="Los Justicieros 08">
-                        </div>
-						
-						 <div class="item">
-                            <img src="../assets/analogico/los-justicieros/00009.jpeg" alt="Los Justicieros 09">
-                        </div>
-						
-						 <div class="item">
-                            <img src="../assets/analogico/los-justicieros/00010.jpeg" alt="Los Justicieros 10">
-                        </div>
-						
-                    </div>
-
-                    <!-- Controles -->
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-
-                </div>
-            </div>
-		</div>
-	</div>
-
-</body>
+            <!-- Controles -->
+            <a
+              class="left carousel-control"
+              href="#myCarousel"
+              data-slide="prev"
+            >
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a
+              class="right carousel-control"
+              href="#myCarousel"
+              data-slide="next"
+            >
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
