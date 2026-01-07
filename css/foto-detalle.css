@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* CSS Document */
 .contenedor-general {
   display: flex;
@@ -10,15 +11,16 @@
   padding-right: 40px;
   box-sizing: border-box;
 }
+
 .columna-izq {
   width: 40%;
   display: flex;
   gap: 80px;
   flex-direction: column;
 }
-.top-buttons {
+
+.top-buttons.detail {
   justify-content: flex-end;
-  align-items: right;
 }
 
 .bloque-arriba h1 {
@@ -61,6 +63,7 @@ carousel-inner,
     flex-direction: column;
     padding: 20px;
   }
+
   .columna-izq,
   .columna-der {
     width: 100%;
